@@ -1,0 +1,91 @@
+.App {
+  text-align: center;
+}
+
+
+.spinner {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.spinner span {
+  font-size: 2rem;
+  animation: fade 1s linear 0s infinite;
+  padding-right: 1rem;
+}
+
+.half-spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgb(48, 114, 233);
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin 0.5s linear 0s infinite;
+}
+
+.completed {
+  font-size: 2rem;
+  color: #03fc4e;
+
+  animation: Pokemons 1s linear;
+}
+
+.logo {
+  /* transition: transform 0.5s; */
+  transition: transform 0.5s ease-in-out;
+}
+
+.logo:hover {
+  transform: translateX(50px);
+}
+.logo:hover:hover {
+  transform: translateX(-50px);
+}
+
+
+
+@keyframes bigger {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+.pokewait {
+  animation: girar-infinito 2s linear infinite;
+}
+
+@keyframes girar-infinito {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
